@@ -4,7 +4,7 @@
 Please note that the signatures included in Neuromancer are only proof-of-concept at this time and may not accurately represent actual malware signatures. Use at your own risk.
 
 <p align="center">
-  <img src="https://mkpcdn.com/1000x/201c12179e246ad62f8627033cdfffef_694630.gif">
+  <img src="https://64.media.tumblr.com/836d5e230d44d9f1aabdd9747eaa39f5/tumblr_p575jtlc6e1syrjl3o2_640.gif">
 </p>
 
 ## Introduction
