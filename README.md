@@ -35,4 +35,4 @@ To use Neuromancer, simply run the script with the desired file as the input. Th
 
 ### Credits
 - Original Author: [@rf-peixoto](https://github.com/in/rf-peixoto)
-- New Feature Author: [@d3moon](https://github.com/in/d3moon)
+- New Feature Author: [@d3moon](https://github.com/d3moon)
