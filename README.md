@@ -18,7 +18,7 @@ Neuromancer works by comparing not only the signatures as a whole, but also the 
 - Detection of complete or approximate malware signatures
 - Comparison of both signatures and position of bytes in a file
 - Adjustable tolerance value to refine scans
-- 
+
 ## Usage
 To use Neuromancer, simply run the script with the desired file as the input. The output will indicate whether the file matches any of the signatures in the database.
 <br/>
