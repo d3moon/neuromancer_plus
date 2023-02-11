@@ -1,5 +1,5 @@
 import hashlib
-import json, sys
+import json, sys, os
 # ---------------------------------------------------------------------------- #
 # Prepare Class:
 class Neuromancer:
@@ -30,13 +30,20 @@ class Neuromancer:
         else:
             return False
 
+    def binary_to_hexadecimal(self, binary_str):
+        return hex(int(binary_str, 2))
+
     def hash_file(self):
         try:
             with open(self.filename, "rb") as fl:
                 data = fl.read()
-            self.file_hash = hashlib.blake2b(data).hexdigest()
+            binary_data = ''.join(format(byte, '08b') for byte in data)
+            hexadecimal_data = self.binary_to_hexadecimal(binary_data)
+            self.file_hash = hashlib.blake2b(hexadecimal_data.encode("utf-8")).hexdigest()
         except Exception as error:
             print(error)
+
+
 # ---------------------------------------------------------------------------- #
 # Logo:
 def show_logo():
@@ -54,17 +61,25 @@ show_logo()
 if len(sys.argv) != 2:
     print("\033[35m[!]\033[00m Usage: {0} <filename>".format(sys.argv[0]))
     sys.exit()
+
 # Read file:
 print("\033[35m[+]\033[00m Reading {0}.".format(sys.argv[1]))
 neuro = Neuromancer(sys.argv[1])
+
 # Hashing file:
 print("\033[35m[+]\033[00m Hashing file.")
 neuro.hash_file()
+
 # Loading database:
 print("\033[35m[+]\033[00m Loading database.")
-fl = open("sigs.json")
-signatures = json.load(fl)
-fl.close()
+if os.path.exists("sigs.json"):
+    fl = open("sigs.json")
+    signatures = json.load(fl)
+    fl.close()
+else:
+    print("\033[31m[!]\033[00m The file 'sigs.json' does not exist.")
+    sys.exit()
+
 # Checking hashes:
 print("\033[35m[+]\033[00m Comparing hashes. This could take a while.")
 for key in signatures.keys():
