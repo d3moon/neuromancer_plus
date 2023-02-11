@@ -21,6 +21,11 @@ Neuromancer works by comparing not only the signatures as a whole, but also the 
 - 
 ## Usage
 To use Neuromancer, simply run the script with the desired file as the input. The output will indicate whether the file matches any of the signatures in the database.
+<br/>
+``sudo apt-get install python3-tk``
+
+``pip install neuromancer.py``
+
 
 # Features
 - Advanced language processing algorithms
@@ -29,5 +34,5 @@ To use Neuromancer, simply run the script with the desired file as the input. Th
 
 
 ### Credits
-Original Author: @rf-peixoto
-New Feature Author: @d3moon
+- Original Author: [@rf-peixoto](https://github.com/in/rf-peixoto)
+- New Feature Author: [@d3moon](https://github.com/in/d3moon)
