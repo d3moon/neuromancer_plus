@@ -1,4 +1,33 @@
-# neuromancer
-Neuromancer is a script for static analysis of files, looking for complete or approximate malware signatures. Signatures included here are proof of concept at this time, not representing actual sample signatures. However, new actual signatures will be added as samples are indexed.
+# Neuromancer
 
-Neuromancer works by comparing not only the signatures as a whole, but also the position of the bytes, ensuring greater coverage for samples from the same family. You can change the tolerance value in the main class to refine your scans.
+### Disclaimer
+Please note that the signatures included in Neuromancer are only proof-of-concept at this time and may not accurately represent actual malware signatures. Use at your own risk.
+
+<p align="center">
+  <img src="https://mkpcdn.com/1000x/201c12179e246ad62f8627033cdfffef_694630.gif">
+</p>
+
+## Introduction
+Neuromancer is a static analysis script for files, aimed at detecting complete or approximate malware signatures. The signatures included in this script are only proof-of-concept at this time, and will be updated with actual signatures as they are indexed.
+
+## How it works
+Neuromancer works by comparing not only the signatures as a whole, but also the position of the bytes in the file. This ensures a greater coverage of samples from the same malware family. The user can refine their scans by adjusting the tolerance value in the main class.
+
+## Key Features
+- Static analysis of files
+- Detection of complete or approximate malware signatures
+- Comparison of both signatures and position of bytes in a file
+- Adjustable tolerance value to refine scans
+- 
+## Usage
+To use Neuromancer, simply run the script with the desired file as the input. The output will indicate whether the file matches any of the signatures in the database.
+
+# Features
+- Advanced language processing algorithms
+- Ability to understand and respond to user inputs in a conversational manner
+- Built-in knowledge database with information on a wide range of topics
+
+
+### Credits
+Original Author: @rf-peixoto
+New Feature Author: @d3moon
